@@ -6,11 +6,12 @@
 
 .customers__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .customers__item {
-  width: calc((100% - 150px) / 6);
+  width: calc((100% - 30px) / 2);
   height: 92px;
 }
 

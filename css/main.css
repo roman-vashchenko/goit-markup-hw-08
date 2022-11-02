@@ -48,6 +48,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 body {
@@ -78,15 +79,26 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+@media screen and (min-width: 480px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .backdrop {
@@ -455,7 +467,6 @@ body {
 }
 
 .features__wrapper {
-  width: 270px;
   height: 120px;
   margin-bottom: 30px;
   display: flex;
@@ -467,7 +478,12 @@ body {
 
 .features__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+}
+
+.features__item {
+  width: 100%;
 }
 
 .features__title {
@@ -499,11 +515,12 @@ body {
 
 .services__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .services__item {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
 }
 
 .services__wrapper {
@@ -537,6 +554,7 @@ body {
 
 .team__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -606,11 +624,12 @@ body {
 
 .customers__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .customers__item {
-  width: calc((100% - 150px) / 6);
+  width: calc((100% - 30px) / 2);
   height: 92px;
 }
 
