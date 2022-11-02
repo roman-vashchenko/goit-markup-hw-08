@@ -38,6 +38,11 @@
   gap: 30px;
 }
 
+.project-list-item {
+  width: 100%;
+}
+
+
 .project-link {
   display: block;
   transition: box-shadow $transition-time $transition-function;
@@ -67,7 +72,7 @@
   letter-spacing: 0.03em;
   color: $secondary-color;
   background-color: rgba(33, 150, 243, 0.9);
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform $transition-time $transition-function;
   .project-link:hover &,
   .project-link:focus & {
