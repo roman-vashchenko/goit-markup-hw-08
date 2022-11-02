@@ -1,0 +1,41 @@
+.services {
+  padding-bottom: 94px;
+  background: $secondary-color;
+}
+
+.services__title {
+  margin-bottom: 50px;
+ @extend %title;
+  color: $title-text-color;
+}
+
+.services__list {
+  display: flex;
+  gap: 30px;
+}
+
+.services__item {
+  width: calc((100% - 60px) / 3);
+}
+
+.services__wrapper {
+  position: relative;
+}
+
+.services__text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  padding: 27px 0;
+  width: 100%;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $secondary-color;
+  background-color: rgba(47, 48, 58, 0.8);
+}
