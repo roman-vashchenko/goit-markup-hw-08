@@ -514,6 +514,12 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: left;
+  }
 }
 
 .features__text {
