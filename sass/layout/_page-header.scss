@@ -130,31 +130,19 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding: 48px 40px 83px;
   background-color: #3f51b5;
-  z-index: 999;
+  // z-index: 999;
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
-
-  // & .btn__closemenu {
-  //   position: absolute;
-  //   top: 0;
-  //   right: 0;
-  //   color: #fff;
-  // }
+  &.is-open {
+    transform: translateX(0);
+  }
 }
 
 .btn__closemenu {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 15px;
+  right: 15px;
 }
-
-
-
-.header__menu.is-open {
-  transform: translateX(0);
-}
-
-
