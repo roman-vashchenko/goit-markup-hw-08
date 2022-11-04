@@ -6,6 +6,7 @@
 .header__container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .navigation {
@@ -14,22 +15,40 @@
 }
 
 .logo {
+  // margin-right: 93px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: #000000;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
-  margin-right: 93px;
   & span {
     color: $accent-color;
   }
 }
 
+.header__btn {
+  border: none;
+  background-color: transparent;
+  & .btn__closemenu {
+    display: none;
+  }
+  &.is-open .btn__closemenu {
+    display: block;
+  }
+  &.is-open .btn__menu {
+    display: none;
+  }
+}
+
+
 .menu {
-  display: flex;
-  align-items: center;
-  gap: 50px;
+  // display: flex;
+  // align-items: center;
+  // gap: 50px;
+  display: none;
 }
 
 .menu__link {
@@ -52,10 +71,11 @@
 }
 
 .contact {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  gap: 50px;
+  // display: flex;
+  // align-items: center;
+  // margin-left: auto;
+  // gap: 50px;
+  display: none;
 }
 
 .contact__mail,

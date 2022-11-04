@@ -341,6 +341,7 @@ body {
 .header__container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .navigation {
@@ -349,22 +350,35 @@ body {
 }
 
 .logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: #000000;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
-  margin-right: 93px;
 }
 .logo span {
   color: #2196f3;
 }
 
+.header__btn {
+  border: none;
+  background-color: transparent;
+}
+.header__btn .btn__closemenu {
+  display: none;
+}
+.header__btn.is-open .btn__closemenu {
+  display: block;
+}
+.header__btn.is-open .btn__menu {
+  display: none;
+}
+
 .menu {
-  display: flex;
-  align-items: center;
-  gap: 50px;
+  display: none;
 }
 
 .menu__link {
@@ -383,10 +397,7 @@ body {
 }
 
 .contact {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  gap: 50px;
+  display: none;
 }
 
 .contact__mail,
