@@ -12,13 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <nav class="navigation">
           <a class="logo" href="./index.html"><span>Web</span>Studio</a>
           <ul class="menu">
-            <li class="menu__item"><a class="menu__link" href="./index.html">Студія</a></li>
-            <li class="menu__item"><a class="menu__link current" href="./portfolio.html">Портфоліо</a></li>
+            <li class="menu__item"><a class="menu__link current" href="./index.html">Студія</a></li>
+            <li class="menu__item"><a class="menu__link" href="./portfolio.html">Портфоліо</a></li>
             <li class="menu__item"><a class="menu__link" href="">Контакти</a></li>
           </ul>
         </nav>
@@ -26,8 +26,25 @@
           <li class="contact__item"><a class="contact__mail" href="mailto:info@devstudio.com"><svg class="contact__icon" width="16" height="12"><use href="./images/icons.svg#icon-mail"></use></svg>info@devstudio.com</a></li>
           <li class="contact__item"><a class="contact__tel" href="tel:+380961111111"><svg class="contact__icon" width="10" height="16"><use href="./images/icons.svg#icon-tell"></use></svg>+38 096 111 11 11</a></li>
         </ul>
+          <button type="button" class="btn header__btn js-open-menu">
+            <svg class="btn__menu"width="44" height="44" aria-label="Перемикач мобільного меню">
+             <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+        </button>
+       <div class="header__menu js-menu-container">
+          <button type="button" class="btn header__btn js-close-menu">
+            <svg class="btn__closemenu"width="44" height="44" aria-label="Перемикач мобільного меню">
+              <use href="./images/icons.svg#icon-closemenu"></use>
+            </svg>
+          </button>
+          <ul class="header__list">
+            <li class="header___item"><a class="header___link" href="./index.html">Студія</a></li>
+            <li class="header___item"><a class="header___link current" href="./portfolio.html">Портфоліо</a></li>
+            <li class="header___item"><a class="header___link" href="">Контакти</a></li>
+          </ul>
+       </div>
       </div>
-    </header> -->
+    </header>
     <main>
       <section class="filter section">
         <div class="container">
@@ -184,5 +201,6 @@
         </form>
       </div>
     </footer> -->
+    <script src="./js/mobile-menu.js" ></script>
   </body>
 </html>
