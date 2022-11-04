@@ -2,6 +2,9 @@
   @extend %title;
   margin-bottom: 50px;
   color: $title-text-color;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 }
 
 .customers__list {
@@ -13,6 +16,12 @@
 .customers__item {
   width: calc((100% - 30px) / 2);
   height: 92px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+  }
+   @media screen and (min-width: 1200px) {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .customers__link {

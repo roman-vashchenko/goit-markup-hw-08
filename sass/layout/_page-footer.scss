@@ -20,8 +20,8 @@
   display: block;
   margin-bottom: 20px;
   span {
-  color: $accent-color;
-}
+    color: $accent-color;
+  }
 }
 
 .footer__location {
@@ -49,7 +49,6 @@
     color: $accent-color;
   }
 }
-
 
 .footer__join {
   margin-bottom: 20px;
@@ -95,13 +94,13 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   &::placeholder {
-  font-weight: 16px;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
+    font-weight: 16px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
 
-  color: rgba(255, 255, 255, 0.6);
-}
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .subscribe__join {
@@ -113,7 +112,6 @@
   text-transform: uppercase;
   color: $secondary-color;
 }
-
 
 .subscribe__btn {
   display: flex;

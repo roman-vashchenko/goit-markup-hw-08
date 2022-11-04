@@ -1,12 +1,19 @@
 .services {
   padding-bottom: 94px;
   background: $secondary-color;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .services__title {
   margin-bottom: 50px;
- @extend %title;
+  @extend %title;
   color: $title-text-color;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 }
 
 .services__list {
@@ -16,8 +23,7 @@
 }
 
 .services__item {
-  // width: calc((100% - 60px) / 3);
-  width: 100%;
+  width: calc((100% - 60px) / 3);
 }
 
 .services__wrapper {
