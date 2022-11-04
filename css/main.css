@@ -453,11 +453,16 @@ body {
 .header__menu.is-open {
   transform: translateX(0);
 }
-
-.btn__closemenu {
+.header__menu .btn__closemenu {
   position: absolute;
   top: 15px;
   right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .header__btn {
+    display: none;
+  }
 }
 
 .hero {
