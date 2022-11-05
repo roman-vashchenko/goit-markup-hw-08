@@ -386,7 +386,6 @@ body {
 @media screen and (min-width: 1200px) {
   .menu {
     font-size: 14px;
-    line-height: 1.14;
   }
 }
 
@@ -424,7 +423,6 @@ body {
     flex-direction: row;
     gap: 50px;
     font-size: 16px;
-    line-height: 1.14;
   }
 }
 
