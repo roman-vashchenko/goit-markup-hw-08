@@ -363,9 +363,31 @@ body {
 .logo span {
   color: #2196f3;
 }
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 93px;
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
 
 .menu {
   display: none;
+}
+@media screen and (min-width: 767px) {
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .menu__link {
@@ -385,6 +407,25 @@ body {
 
 .contact {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+    font-size: 16px;
+    line-height: 1.14;
+  }
 }
 
 .contact__mail,
@@ -426,12 +467,6 @@ body {
   border-radius: 2px;
   -webkit-animation: currentBorder 250ms cubic-bezier(0.4, 0, 0.2, 1);
           animation: currentBorder 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: none;
-}
-@media screen and (max-width: 767px) {
-  .current {
-    color: #2196f3;
-  }
 }
 
 .header__btn {
@@ -446,7 +481,7 @@ body {
   width: 100vw;
   height: 100vh;
   padding: 48px 40px 83px;
-  background-color: #3f51b5;
+  background-color: #fff;
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
@@ -801,6 +836,16 @@ body {
 .project-list-item {
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .project-list-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project-list-item {
+    width: calc((100% - 60px) / 3);
+  }
+}
 
 .project-link {
   display: block;
@@ -808,7 +853,6 @@ body {
 }
 .project-link:hover, .project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  display: block;
 }
 
 .project-thumb {

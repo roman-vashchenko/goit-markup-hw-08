@@ -16,7 +16,6 @@
 }
 
 .logo {
-  // margin-right: 93px;
   padding-top: 16px;
   padding-bottom: 16px;
   color: #000000;
@@ -28,6 +27,11 @@
   & span {
     color: $accent-color;
   }
+  @media screen and (min-width: 768px) {
+    margin-right: 93px;
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .menu {
@@ -35,6 +39,17 @@
   // align-items: center;
   // gap: 50px;
   display: none;
+  @media screen and (min-width: 767px) {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .menu__link {
@@ -62,6 +77,21 @@
   // margin-left: auto;
   // gap: 50px;
   display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+    font-size: 16px;
+    line-height: 1.14;
+  }
 }
 
 .contact__mail,
@@ -103,10 +133,6 @@
     background-color: $accent-color;
     border-radius: 2px;
     animation: currentBorder $transition-time $transition-function;
-    display: none;
-  }
-  @media screen and (max-width: 767px) {
-    color: $accent-color;
   }
 }
 
@@ -122,7 +148,7 @@
   width: 100vw;
   height: 100vh;
   padding: 48px 40px 83px;
-  background-color: #3f51b5;
+  background-color: #fff;
   z-index: 999;
 
   transform: translateX(100%);
