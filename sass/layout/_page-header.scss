@@ -138,13 +138,9 @@
   }
 }
 
-// .btn-mob-menu {
-//   border: none;
-//   background-color: transparent;
-// }
-
 .mob-menu {
   position: fixed;
+  overflow: scroll;
   top: 0;
   left: 0;
   width: 100vw;
@@ -176,6 +172,10 @@
   }
 }
 
+.mob-menu-pages {
+  margin-bottom: 302px;
+}
+
 .mob-menu-pages-link {
   font-weight: 500;
   font-size: 40px;
@@ -186,4 +186,42 @@
 
 .active {
   color: $accent-color;
+}
+
+.mob-menu-contact {
+  margin-bottom: 64px;
+}
+
+.mob-menu-contact-tel {
+  display: block;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+}
+
+.mob-menu-contact-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: $text-color;
+}
+
+.mob-menu-soc {
+  display: flex;
+}
+
+.mob-menu-soc-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  & span {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+  }
 }
