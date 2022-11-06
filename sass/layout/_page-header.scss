@@ -158,8 +158,12 @@
   }
   & .btn-mob-menu-close {
     position: absolute;
-    top: 21px;
-    right: 25px;
+    top: 10px;
+    right: 15px;
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
   }
 }
 
@@ -220,8 +224,4 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
-  & span {
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    transform: rotate(90deg);
-  }
 }
