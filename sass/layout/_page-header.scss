@@ -180,6 +180,10 @@
   margin-bottom: 302px;
 }
 
+.mob-menu-pages-item:not(:last-child) {
+  margin-bottom: 35px;
+}
+
 .mob-menu-pages-link {
   font-weight: 500;
   font-size: 40px;
@@ -219,14 +223,6 @@
   gap: 20px;
 }
 
-// .mob-menu-soc-link {
-//   position: relative;
-//   font-weight: 500;
-//   font-size: 18px;
-//   line-height: 1.22;
-//   letter-spacing: 0.02em;
-//   color: #2196f3;
-// }
 
 .mob-menu-soc-link {
   position: relative;
