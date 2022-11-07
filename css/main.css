@@ -601,6 +601,7 @@ body {
 
 .hero {
   height: 400px;
+  width: 100%;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mob.jpg");
   background-color: #2f303a;
   background-size: cover;
@@ -1062,16 +1063,14 @@ body {
 }
 
 .footer__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  text-align: center;
 }
 
 .footer__logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #ffffff;
   display: block;
@@ -1079,6 +1078,10 @@ body {
 }
 .footer__logo span {
   color: #2196f3;
+}
+
+.footer__wrapper {
+  margin-bottom: 60px;
 }
 
 .footer__location {
@@ -1134,13 +1137,9 @@ body {
   fill: #ffffff;
 }
 
-.subscribe__wrapper {
-  display: flex;
-}
-
 .subscribe__field {
-  width: 358px;
-  margin-right: 12px;
+  width: 100%;
+  margin-bottom: 20px;
   padding: 15px 16px;
   color: #ffffff;
   background-color: #2f303a;
@@ -1150,21 +1149,21 @@ body {
   border-radius: 4px;
 }
 .subscribe__field::-moz-placeholder {
-  font-weight: 16px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .subscribe__field:-ms-input-placeholder {
-  font-weight: 16px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .subscribe__field::placeholder {
-  font-weight: 16px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -1184,6 +1183,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
   padding-top: 10px;
   padding-bottom: 10px;
   min-width: 200px;
