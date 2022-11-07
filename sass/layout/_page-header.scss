@@ -223,8 +223,15 @@
   gap: 20px;
 }
 
-
 .mob-menu-soc-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mob-menu-soc-item {
   position: relative;
   font-weight: 500;
   font-size: 18px;
@@ -242,5 +249,10 @@
     background-color: rgba(33, 33, 33, 0.2);
     transform: rotate(90deg);
     color: #000000;
+  }
+
+  &:first-child::after {
+    content: '';
+    display: none;
   }
 }
