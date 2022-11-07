@@ -28,7 +28,12 @@
     color: $accent-color;
   }
   @media screen and (min-width: 768px) {
-    margin-right: 93px;
+    margin-right: 87px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 92px;
     font-size: 26px;
     line-height: 1.19;
   }
@@ -43,7 +48,7 @@
     display: flex;
     align-items: center;
     gap: 50px;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.17;
   }
   @media screen and (min-width: 1200px) {
@@ -71,10 +76,6 @@
 }
 
 .contact {
-  // display: flex;
-  // align-items: center;
-  // margin-left: auto;
-  // gap: 50px;
   display: none;
   @media screen and (min-width: 768px) {
     display: flex;
@@ -88,7 +89,7 @@
     align-items: center;
     flex-direction: row;
     gap: 50px;
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
