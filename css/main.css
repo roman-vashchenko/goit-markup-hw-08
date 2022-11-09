@@ -946,15 +946,14 @@ body {
 
 .filter-list {
   display: flex;
-  justify-content: center;
   gap: 8px;
+  flex-wrap: wrap;
   margin-bottom: 34px;
 }
 
 .filter-btn {
   display: block;
-  margin: 0 auto;
-  padding: 6px 22px;
+  padding: 6px 25px;
   border-style: none;
   border-radius: 4px;
   font-family: inherit;
