@@ -133,7 +133,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 450px;
+  min-width: 400px;
   min-height: 609px;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -171,7 +171,12 @@ body {
 }
 
 .your-data-form {
-  padding: 40px;
+  padding: 30px;
+}
+@media screen and (min-width: 768px) {
+  .your-data-form {
+    padding: 40px;
+  }
 }
 
 .title-form {
@@ -273,6 +278,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .form-contract-condition {
+    font-size: 14px;
     text-align: center;
   }
 }
