@@ -4,9 +4,6 @@
 }
 
 .footer__container {
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: baseline;
   text-align: center;
   @media screen and (min-width: 768px) {
     width: 590px;
@@ -24,15 +21,13 @@
 
 .footer__logo {
   display: block;
+  padding: 0;
   margin: 0;
   margin-bottom: 20px;
   padding-top: 60px;
-  padding-bottom: 20px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  // font-size: 26px;
   font-size: 24px;
-  // line-height: 1.19;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: $secondary-color;
@@ -101,21 +96,20 @@
 
 .subscribe__wrapper {
   @media screen and (min-width: 1200px) {
-    display: flex;;
+    display: flex;
   }
 }
 
 .subscribe {
   @media screen and (max-width: 1199px) {
     margin: 0 auto;
+    padding-bottom: 60px;
   }
 }
 
 
 .subscribe__field {
-  // width: 358px;
   width: 100%;
-  // margin-right: 12px;
   margin-bottom: 20px;
   padding: 15px 16px;
   color: $secondary-color;
