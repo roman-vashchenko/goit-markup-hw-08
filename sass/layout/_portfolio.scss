@@ -4,10 +4,12 @@
 
 .filter-list {
   display: flex;
-  // justify-content: center;
   gap: 8px;
   flex-wrap: wrap;
   margin-bottom: 34px;
+  @media screen and (min-width:768px) {
+    justify-content: center;
+  }
 }
 
 .filter-btn {
