@@ -1,5 +1,5 @@
 .footer {
-  padding: 60px 0;
+  // padding: 60px 0;
   background-color: #2f303a;
 }
 
@@ -8,9 +8,26 @@
   // justify-content: space-between;
   // align-items: baseline;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    width: 590px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  @media screen and (min-width: 1200px){
+    width: 1200px;
+    flex-wrap: nowrap;
+    text-align: left;
+  }
 }
 
 .footer__logo {
+  display: block;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-top: 60px;
+  padding-bottom: 20px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   // font-size: 26px;
@@ -19,14 +36,10 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: $secondary-color;
-
-  display: block;
-  margin-bottom: 20px;
   span {
     color: $accent-color;
   }
 }
-
 .footer__wrapper {
   margin-bottom: 60px;
 }
@@ -40,7 +53,7 @@
   color: $secondary-color;
 }
 
-.footer__item {
+.footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -86,9 +99,18 @@
   fill: $secondary-color;
 }
 
-// .subscribe__wrapper {
-//   display: flex;
-// }
+.subscribe__wrapper {
+  @media screen and (min-width: 1200px) {
+    display: flex;;
+  }
+}
+
+.subscribe {
+  @media screen and (max-width: 1199px) {
+    margin: 0 auto;
+  }
+}
+
 
 .subscribe__field {
   // width: 358px;
@@ -109,6 +131,14 @@
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 
