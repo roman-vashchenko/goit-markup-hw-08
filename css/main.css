@@ -142,7 +142,8 @@ body {
 }
 @media screen and (max-width: 479px) {
   .modal {
-    min-width: 400px;
+    min-width: 300px;
+    min-height: 550px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -176,6 +177,11 @@ body {
 
 .your-data-form {
   padding: 30px;
+}
+@media screen and (max-width: 479px) {
+  .your-data-form {
+    padding: 25px;
+  }
 }
 @media screen and (min-width: 768px) {
   .your-data-form {
@@ -215,6 +221,11 @@ body {
   border-radius: 4px;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 479px) {
+  .form-field input {
+    padding: 8px 42px;
+  }
 }
 .form-field:focus-within, .form-field input:focus {
   fill: #2196f3;
@@ -274,6 +285,11 @@ body {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+@media screen and (max-width: 479px) {
+  .form-comment {
+    height: 120px;
+  }
 }
 
 .form-contract-condition {
@@ -372,8 +388,6 @@ body {
 }
 
 .logo {
-  padding-top: 16px;
-  padding-bottom: 16px;
   color: #000000;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -383,6 +397,12 @@ body {
 }
 .logo span {
   color: #2196f3;
+}
+@media screen and (max-width: 479px) {
+  .logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 @media screen and (min-width: 768px) {
   .logo {
@@ -542,6 +562,11 @@ body {
 
 .mob-menu-pages {
   margin-bottom: 302px;
+}
+@media screen and (max-width: 479px) {
+  .mob-menu-pages {
+    margin-bottom: 250px;
+  }
 }
 
 .mob-menu-pages-item:not(:last-child) {
@@ -1107,7 +1132,6 @@ body {
 
 .footer__logo {
   display: block;
-  padding: 0;
   margin: 0;
   margin-bottom: 20px;
   padding-top: 60px;

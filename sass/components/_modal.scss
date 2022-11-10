@@ -30,7 +30,8 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform $transition-time $transition-function;
   @media screen and (max-width: 479px) {
-    min-width: 400px;
+    min-width: 300px;
+    min-height: 550px;
   }
   @media screen and (min-width: 1200px) {
     min-width: 528px;
@@ -66,6 +67,9 @@
 
 .your-data-form {
   padding: 30px;
+  @media screen and (max-width: 479px) {
+    padding: 25px;
+  }
   @media screen and (min-width: 768px) {
     padding: 40px;
   }
@@ -104,6 +108,9 @@
     border-radius: 4px;
     outline: transparent;
     transition: border-color $transition-time $transition-function;
+    @media screen and (max-width: 479px) {
+      padding: 8px 42px;
+    }
   }
   &:focus-within,
   & input:focus {
@@ -151,6 +158,9 @@
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
   }
+  @media screen and (max-width: 479px) {
+    height: 120px;
+  }
 }
 
 .form-contract-condition {
@@ -192,6 +202,7 @@
   .checkbox:focus + label & {
     outline: 1px solid $title-text-color;
   }
+  
 }
 
 .icon-check {

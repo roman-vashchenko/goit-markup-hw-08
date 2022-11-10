@@ -16,8 +16,6 @@
 }
 
 .logo {
-  padding-top: 16px;
-  padding-bottom: 16px;
   color: #000000;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -26,6 +24,10 @@
   letter-spacing: 0.03em;
   & span {
     color: $accent-color;
+  }
+  @media screen and (max-width: 479px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
   @media screen and (min-width: 768px) {
     margin-right: 87px;
@@ -176,6 +178,9 @@
 
 .mob-menu-pages {
   margin-bottom: 302px;
+  @media screen and (max-width: 479px) {
+    margin-bottom: 250px;
+  }
 }
 
 .mob-menu-pages-item:not(:last-child) {
@@ -250,7 +255,7 @@
   }
 
   &:first-child::after {
-    content: '';
+    content: "";
     display: none;
   }
 }

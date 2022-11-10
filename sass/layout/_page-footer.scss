@@ -1,5 +1,4 @@
 .footer {
-  // padding: 60px 0;
   background-color: #2f303a;
 }
 
@@ -12,7 +11,7 @@
     justify-content: space-between;
     align-items: baseline;
   }
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     width: 1200px;
     flex-wrap: nowrap;
     text-align: left;
@@ -21,7 +20,6 @@
 
 .footer__logo {
   display: block;
-  padding: 0;
   margin: 0;
   margin-bottom: 20px;
   padding-top: 60px;
@@ -106,7 +104,6 @@
     padding-bottom: 60px;
   }
 }
-
 
 .subscribe__field {
   width: 100%;
