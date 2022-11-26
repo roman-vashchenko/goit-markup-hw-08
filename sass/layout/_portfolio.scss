@@ -7,7 +7,7 @@
   gap: 8px;
   flex-wrap: wrap;
   margin-bottom: 34px;
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     justify-content: center;
   }
 }
@@ -64,6 +64,12 @@
   overflow: hidden;
 }
 
+.project-img {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+}
+
 .project-animation-text {
   position: absolute;
   top: 0;
@@ -92,7 +98,7 @@
 }
 
 .indent-down {
-  @media screen and (min-width: 768px ) {
+  @media screen and (min-width: 768px) {
     padding-bottom: 56px;
   }
   @media screen and (min-width: 1199px) {

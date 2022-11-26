@@ -523,13 +523,14 @@ body {
 
 .mob-menu {
   position: fixed;
-  overflow: auto;
+  overflow: scroll;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   padding: 0;
   margin: 0;
+  padding: 48px 40px 84px;
   background-color: #fff;
   z-index: 999;
   transform: translateX(100%);
@@ -557,11 +558,6 @@ body {
 .btn-mob-menu-close {
     display: none;
   }
-}
-
-.mob-menu-content {
-  padding: 48px 40px 84px;
-  overflow: auto;
 }
 
 .mob-menu-pages {
@@ -1056,6 +1052,12 @@ body {
 .project-thumb {
   position: relative;
   overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+  .project-img {
+    width: 100%;
+  }
 }
 
 .project-animation-text {
